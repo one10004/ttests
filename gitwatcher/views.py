@@ -27,6 +27,6 @@ def gitwatch2(request, address):
 	os.system('aws s3 cp s3://ec2s3example/' + address + '.zip ./')
 	os.system('unzip ' + address +'.zip -d ./' + address)
 	os.system('cd ' + address)
-	print("fdfdfd")
+	os.system('pwd')
 	os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 	return render(request, 'gitwatcher/statistics2.html')

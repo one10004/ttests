@@ -15,7 +15,7 @@ def gitwatch1(request, address):
 	os.system('git clone ' + address + '.git')
 	words = address.split('/')
 	length = len(words)
-	os.chdir('/home/ubuntu/' + words[length-1])
+	os.chdir('/home/ubuntu/' + words[length-2])
 	os.system('pwd')
 	git.main()
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html')

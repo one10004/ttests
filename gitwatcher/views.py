@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import os
 import zipfile
-from gitinspector import gitinspector as git
+from inspector_custom import gitinspector as git
 # Create your views here.
 
 def index(request):

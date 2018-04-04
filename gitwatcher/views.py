@@ -31,6 +31,7 @@ def gitwatch2(request, address):
    BUCKET_NAME = 'gittos3fixed-outputbucket-ix0jgogj97ai'
    KEY = 'kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip'
    s3 = boto3.resource('s3')
+   print("dfdfd")
    try:
        s3.Bucket(BUCKET_NAME).download_file(KEY, '/home/ubuntu/다운로드성공.zip')
    except botocore.exceptions.Clienterror as e:

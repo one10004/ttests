@@ -30,7 +30,7 @@ def gitwatch2(request, address):
 	#gittos3fixed-outputbucket-ix0jgogj97ai
 	BUCKET_NAME = 'gittos3fixed-outputbucket-ix0jgogj97ai'
 	#kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip
-	KEY = 'kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip'
+	KEY = 'kookmin-sw/2018-cap1-6/branch/master/kookmin-sw_2018-cap1-6_branch_master.zip'
 	s3 = boto3.resource('s3')
 	try:
 		print("찾기 전")

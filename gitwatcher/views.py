@@ -34,7 +34,7 @@ def gitwatch2(request, address):
 	s3 = boto3.resource('s3')
 	try:
 		print("찾기 전")
-		s3.Bucket(BUCKET_NAME).download_file(KEY, '/home/ubuntu/다운로드성공.html')
+		s3.Bucket(BUCKET_NAME).download_file(KEY, '다운로드성공.html')
 	except botocore.exceptions.Clienterror as e:
 		if e.response['Error']['Code'] == '404':
 			print("The object does not exist.")

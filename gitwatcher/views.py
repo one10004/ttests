@@ -3,6 +3,8 @@ from django.http import HttpResponse
 import os
 import zipfile
 from gitinspector import gitinspector as git
+import boto3
+import botocore
 # Create your views here.
 
 def index(request):

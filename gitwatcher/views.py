@@ -28,6 +28,7 @@ def gitwatch1(request, address):
 
 
 def gitwatch2(request, address, branch):
+	print(branch)
 	address_words = address.split('/')
 	branch_words = branch.split('/')
 	branch_len = len(branch_words)

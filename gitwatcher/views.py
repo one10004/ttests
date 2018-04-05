@@ -50,7 +50,7 @@ def gitwatch2(request, address, branch):
 	os.chdir('/home/ubuntu')
 	os.system('unzip git_repo.zip -d ./git_repo')
 	os.chdir('/home/ubuntu/git_repo')
-	git.main(address_words[1] + '/' + branch)
+	git.main(address_words[1] + branch)
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf git_repo.zip')
 	os.system('rm -rf git_repo')

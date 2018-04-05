@@ -29,9 +29,9 @@ def gitwatch2(request, address, branch):
 	#address = words[length-1]
 	BUCKET_NAME = 'gittos3fixed-outputbucket-ix0jgogj97ai'
 	#KEY = 'kookmin-sw/2018-cap1-6/branch/master/kookmin-sw_2018-cap1-6_branch_master.zip'
-	#KEY = address + '/branch/' + branch + words[0] + '_' + words[1] + '_branch_' + branch + '.zip'
+	KEY = address + '/branch/' + branch + '/' + words[0] + '_' + words[1] + '_branch_' + branch + '.zip'
 	#kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip
-	KEY = 'kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip'
+	#KEY = 'kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip'
 	s3 = boto3.resource('s3')
 	try:
 		s3.Bucket(BUCKET_NAME).download_file(KEY, '/home/ubuntu/git_repo.zip')

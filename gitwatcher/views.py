@@ -56,5 +56,5 @@ def gitwatch2(request, address, branch):
 	os.system('rm -rf git_repo')
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 
-	html_output = 'gitwatcher/' + address_words[1] + branch + '.html'
+	html_output = 'gitwatcher/' + address_words[1] + '.html'
 	return render(request, html_output)

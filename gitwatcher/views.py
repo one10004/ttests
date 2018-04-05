@@ -20,8 +20,8 @@ def gitwatch1(request, address):
 	os.chdir('/home/ubuntu/' + words[length-1])
 	os.system('pwd')
 	git.main(words[length-1])
-	#os.chdir('/home/ubuntu')
-	#os.system('rm -rf ' + words[length-1])
+	os.chdir('/home/ubuntu')
+	os.system('rm -rf ' + words[length-1])
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html')
 
 	html_output = 'gitwatcher/' + words[length-1] + '.html'

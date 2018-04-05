@@ -50,11 +50,11 @@ def gitwatch2(request, address, branch):
 	os.chdir('/home/ubuntu')
 	os.system('unzip git_repo.zip -d ./git_repo')
 	os.chdir('/home/ubuntu/git_repo')
-	git.main(branch)
+	git.main(address_words[1] + branch)
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf git_repo.zip')
 	os.system('rm -rf git_repo')
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 
-	html_output = 'gitwatcher/' + branch + '.html'
+	html_output = 'gitwatcher/' + address_words[1] + branch + '.html'
 	return render(request, html_output)

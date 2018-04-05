@@ -25,13 +25,13 @@ def gitwatch1(request, address):
 
 def gitwatch2(request, address):
 	address_words = address.split('/')
-	#branch_words = branch.split('/')
-	#branch_len = len(branch_words)
-'''
+	branch_words = branch.split('/')
+	branch_len = len(branch_words)
+
 	branch_KEY_address = branch_words[0]
 	for i in range(1, branch_len):
 		branch_KEY_address += '_' + branch_words[i]
-'''
+
 	BUCKET_NAME = 'gittos3fixed-outputbucket-ix0jgogj97ai'
 	KEY = address + '/branch/' + branch + '/' + address_words[0] + '_' + address_words[1] + '_branch_' + branch_KEY_address + '.zip'
 	s3 = boto3.resource('s3')

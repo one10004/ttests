@@ -5,5 +5,5 @@ from django.conf.urls import url
 urlpatterns = [
 	url(r'^$', views.index),
 	url(r'^(?P<address>[\/\w_\.-]+)/option1/submit$', views.gitwatch1),
-	url(r'^(?P<address>[\/\w_\.-]+)/option2/submit$', views.gitwatch2)
+	url(r'^(?P<address>[\/\w_\.-]+)/(?P<branch>[\/\w_\.-]+)/option2/submit$', views.gitwatch2)
 ]

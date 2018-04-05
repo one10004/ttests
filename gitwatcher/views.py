@@ -19,6 +19,8 @@ def gitwatch1(request, address):
 	length = len(words)
 	os.chdir('/home/ubuntu/' + words[length-1])
 	git.main()
+	os.chdir('/home/ubutu')
+	os.system('rm -rf ' + words[length-1])
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html')
 	return render(request, 'gitwatcher/statistics2.html')
 

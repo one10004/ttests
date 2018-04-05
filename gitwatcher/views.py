@@ -18,6 +18,7 @@ def gitwatch1(request, address):
 	words = address.split('/')
 	length = len(words)
 	os.chdir('/home/ubuntu/' + words[length-1])
+	os.system('pwd')
 	git.main(words[length-1])
 	#os.chdir('/home/ubuntu')
 	#os.system('rm -rf ' + words[length-1])

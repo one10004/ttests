@@ -23,18 +23,16 @@ def gitwatch1(request, address):
 	return render(request, 'gitwatcher/statistics2.html')
 
 
-def gitwatch2(request, address):
+def gitwatch2(request, address, branch):
 	words = address.split('/')
-	length = len(words)
-	address = words[length-1]
-	#gittos3fixed-outputbucket-ix0jgogj97ai
+	#length = len(words)
+	#address = words[length-1]
 	BUCKET_NAME = 'gittos3fixed-outputbucket-ix0jgogj97ai'
-	#kookmin-sw/2018-cap1-11/branch/master/kookmin-sw_2018-cap1-11_branch_master.zip
-	KEY = 'kookmin-sw/2018-cap1-6/branch/master/kookmin-sw_2018-cap1-6_branch_master.zip'
+	#KEY = 'kookmin-sw/2018-cap1-6/branch/master/kookmin-sw_2018-cap1-6_branch_master.zip'
+	KEY = address + '/branch/' + branch + words[0] + '_' + words[1] + '_branch_' + branch + '.zip'
 	s3 = boto3.resource('s3')
 	try:
-		print("찾기 전")
-		s3.Bucket(BUCKET_NAME).download_file(KEY, '/home/ubuntu/다운로드성공.zip')
+		s3.Bucket(BUCKET_NAME).download_file(KEY, '/home/ubuntu/git_repo.zip')
 	except botocore.exceptions.Clienterror as e:
 		if e.response['Error']['Code'] == '404':
 			print("The object does not exist.")
@@ -42,8 +40,8 @@ def gitwatch2(request, address):
 			raise
 
 	os.chdir('/home/ubuntu')
-	os.system('unzip 다운로드성공.zip -d ./다운로드성공')
-	os.chdir('/home/ubuntu/다운로드성공')
+	os.system('unzip git_repo.zip -d ./git_repo')
+	os.chdir('/home/ubuntu/git_repo')
 	git.main()
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 	return render(request, 'gitwatcher/statistics2.html')

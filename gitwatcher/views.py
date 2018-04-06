@@ -18,15 +18,14 @@ def gitwatch1(request, address):
 	words = address.split('/')
 	length = len(words)
 	os.chdir('/home/ubuntu/' + words[length-1])
-	os.system('pwd')
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	git.main(words[length-1])
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf ' + words[length-1])
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html')
 
 	html_output = 'gitwatcher/' + words[length-1] + '.html'
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	return render(request, html_output)
 
 
@@ -53,6 +52,8 @@ def gitwatch2(request, address, branch):
 	os.chdir('/home/ubuntu')
 	os.system('unzip git_repo.zip -d ./git_repo')
 	os.chdir('/home/ubuntu/git_repo')
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	git.main(address_words[1])
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf git_repo.zip')
@@ -60,6 +61,4 @@ def gitwatch2(request, address, branch):
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 
 	html_output = 'gitwatcher/' + address_words[1] + '.html'
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	return render(request, html_output)

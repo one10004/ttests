@@ -12,14 +12,14 @@ def index(request):
 
 
 def gitwatch1(request, address):
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	address = 'https://github.com/' + address
 	os.chdir('/home/ubuntu')
 	os.system('git clone ' + address + '.git')
 	words = address.split('/')
 	length = len(words)
 	os.chdir('/home/ubuntu/' + words[length-1])
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	git.main(words[length-1])
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf ' + words[length-1])
@@ -30,6 +30,8 @@ def gitwatch1(request, address):
 
 
 def gitwatch2(request, address, branch):
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	address_words = address.split('/')
 	branch_words = branch.split('/')
 	branch_len = len(branch_words)
@@ -52,8 +54,6 @@ def gitwatch2(request, address, branch):
 	os.chdir('/home/ubuntu')
 	os.system('unzip git_repo.zip -d ./git_repo')
 	os.chdir('/home/ubuntu/git_repo')
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	git.main(address_words[1])
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf git_repo.zip')

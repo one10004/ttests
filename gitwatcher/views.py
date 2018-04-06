@@ -25,6 +25,8 @@ def gitwatch1(request, address):
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html')
 
 	html_output = 'gitwatcher/' + words[length-1] + '.html'
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	return render(request, html_output)
 
 
@@ -58,4 +60,6 @@ def gitwatch2(request, address, branch):
 	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 
 	html_output = 'gitwatcher/' + address_words[1] + '.html'
+	os.chdir('/home/ubuntu/ttests')
+	os.system('git pull')
 	return render(request, html_output)

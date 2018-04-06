@@ -12,8 +12,6 @@ def index(request):
 
 
 def gitwatch1(request, address):
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	address = 'https://github.com/' + address
 	os.chdir('/home/ubuntu')
 	os.system('git clone ' + address + '.git')
@@ -30,8 +28,6 @@ def gitwatch1(request, address):
 
 
 def gitwatch2(request, address, branch):
-	os.chdir('/home/ubuntu/ttests')
-	os.system('git pull')
 	address_words = address.split('/')
 	branch_words = branch.split('/')
 	branch_len = len(branch_words)

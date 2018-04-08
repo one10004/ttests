@@ -24,7 +24,7 @@ def gitwatch1(request, address):
 	os.system('rm -rf ' + words[length-1])
 
 	#html_output = 'gitwatcher/' + words[length-1] + '.html'
-	return render(request, 'gitwatcher/statistics1')
+	return render(request, 'gitwatcher/statistics1.html')
 
 
 def gitwatch2(request, address, branch):

@@ -4,8 +4,8 @@
 	<title>GitWatcher</title>
 </head>
 <body>
-	{% if params_list %}
-		{{params_list.name}} <br>
+	{% if context %}
+		{{context.name}} <br>
 	{% else %}
 		<p> Nothing </p>
 	{% endif %}

@@ -5,6 +5,7 @@ import zipfile
 from gitinspector import gitinspector as git
 import boto3
 import botocore
+from django.template import RequestContext, loader
 # Create your views here.
 
 def index(request):
@@ -28,6 +29,12 @@ def gitwatch1(request, address):
 	#html_output = 'gitwatcher/' + words[length-1] + '.html'
 	return render(request, 'gitwatcher/statistics1.html')
 
+def storedData(request):
+	path = '/home/ubuntu/html'
+	files = os.listdir(path)
+	context = RequestContext(request,{'params_list':files})
+	template = loader.get_template('gitwatcher/storedData.html')
+	return HttpResponse(template.render(context))
 
 def gitwatch2(request, address, branch):
 	address_words = address.split('/')

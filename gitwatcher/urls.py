@@ -6,5 +6,6 @@ urlpatterns = [
 	url(r'^$', views.index),
 	url(r'^clonegit$',views.clonegit),
 	url(r'^clonegit/(?P<address>[\/\w_\.-]+)/result$', views.gitwatch1),
-	url(r'^(?P<address>[\/\w_\.-]+)/option2/submit/(?P<branch>[\/\w_\.-]+)$', views.gitwatch2)
+	url(r'^storedData$',views.storedData),
+	url(r'^storedData/(?P<address>[\/\w_\.-]+)/option2/submit/(?P<branch>[\/\w_\.-]+)$', views.gitwatch2)
 ]

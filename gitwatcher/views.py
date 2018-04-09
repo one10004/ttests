@@ -38,7 +38,11 @@ def storedData(request):
 	for i in range(0,len(files)):
 		temp = files[i].split('_')
 		if temp[1] in context['mydict']:
-			branch = temp[3]
+			if temp[3] == 'master.html':
+				remove_html = temp[3].split('.')
+				branch = remove_html[0]
+			else:
+				branch = temp[3]
 			for j in range(4,len(temp)):
 				if j == len(temp)-1:
 					remove_html = temp[j].split('.')

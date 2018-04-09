@@ -33,24 +33,25 @@ def storedData(request):
 	path = '/home/ubuntu/html'
 	files = os.listdir(path)
 	context = {}
+	context['mydict'] = {}
 
 	for i in range(0,len(files)):
 		temp = files[i].split('_')
 		cap_key_temp = temp[1].split('-')
 		cap_key = cap_key_temp[0] + '_' + cap_key_temp[1] + '_' + cap_key_temp[2]
-		if cap_key in context:
+		if cap_key in context['mydict']:
 			branch = temp[3]
 			for j in range(4,len(temp)):
 				branch += '_'
 				branch += temp[j]
-			context[cap_key].append(branch)
+			context['mydict'][cap_key].append(branch)
 		else:
-			context[cap_key] = []
+			context['mydict'][cap_key] = []
 			branch = temp[3]
 			for j in range(4,len(temp)):
 				branch += '_'
 				branch += temp[j]
-			context[cap_key].append(branch)
+			context['mydict'][cap_key].append(branch)
 
 	return render(request,'gitwatcher/storedData.html',context)
 

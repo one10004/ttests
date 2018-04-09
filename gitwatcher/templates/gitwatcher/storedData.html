@@ -4,6 +4,14 @@
 	<title>GitWatcher</title>
 </head>
 <body>
+
+	{% if mydict %}
+
+		{% for key,value in mydict %}
+			{{key}} : {{value}} <br>
+		{% endfor %}
+	{% endif %}
+	<!--
 	<h1> 6조 </h1>
 	<table border="1">
 		<tr>
@@ -17,8 +25,6 @@
 		</tr>
 	{% endfor %}
 	</table>
-	{% for key, value in context%}
-		{{key}}<br>
-	{% endfor %}
+	-->
 </body>
 </html>

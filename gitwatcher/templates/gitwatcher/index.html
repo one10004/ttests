@@ -5,28 +5,21 @@
 </head>
 <body>
     
-    <label>git repository url       : https://github.com/       <input type="text" id="input"></label><br>
-    <label>branch(s3 option only)   :         <input type="text" id="branch" value="master"></label><br>
-    <input type="radio" name="option" value="git" checked="checked"/>git
-    <input type="radio" name="option" value="s3" />s3
-    <button onclick="input()">submit</button>
+    <h1 style="text-align: center;">GitWatcher</h1>
+    <button onclick="button1()">clone해서 분석</button>
+    <button onclick="buttone2()">저장된 분석 결과 확인</button>
 
     <script type="text/javascript">
-        function input(){
-            var obj = document.getElementsByName('option');
-            var url = document.getElementById("input").value;
-            var branch = document.getElementById("branch").value;
+        function button1(){
 
-            if(obj[0].checked)
-            {
-                url += '/option1/submit';
-                location.href = url;
-            }
-            else
-            {
-                url += '/option2/submit/' + branch ;
-                location.href = url;
-            }
+            url += '/clonegit';
+            location.href = url;
+
+        }
+
+        function button2(){
+            url += '/storedData';
+            location.href = url;
         }
     </script>
 

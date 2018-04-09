@@ -10,6 +10,8 @@ import botocore
 def index(request):
 	return render(request,'gitwatcher/index.html')
 
+def clonegit(request):
+	return render(request,'gitwatcher/clonegit.html')
 
 def gitwatch1(request, address):
 	address = 'https://github.com/' + address

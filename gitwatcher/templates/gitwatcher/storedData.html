@@ -8,7 +8,19 @@
 	{% if mydict %}
 
 		{% for key in mydict %}
-			{{key}}<br>
+			<h1>{{key}}</h1>
+			<table>
+				<tr>
+					<th>branch</th>
+					<th>실행</th>
+				</tr>
+			{% for value in key%}
+				<tr>
+					<td>value</td>
+					<td><button>실행</button></td>
+				</tr>
+			{% endfor %}
+			</table>
 		{% endfor %}
 	{% endif %}
 	<!--

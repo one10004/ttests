@@ -17,6 +17,8 @@
 		</tr>
 	{% endfor %}
 	</table>
-	{{context.items}}
+	{% for key, value in context%}
+		{{key}}<br>
+	{% endfor %}
 </body>
 </html>

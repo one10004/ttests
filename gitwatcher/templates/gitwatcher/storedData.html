@@ -9,14 +9,14 @@
 
 		{% for key in mydict %}
 			<h1>{{key}}</h1>
-			<table>
+			<table border="1">
 				<tr>
 					<th>branch</th>
 					<th>실행</th>
 				</tr>
-			{% for value in key%}
+			{% for value in key %}
 				<tr>
-					<td>value</td>
+					<td>{{value}}</td>
 					<td><button>실행</button></td>
 				</tr>
 			{% endfor %}

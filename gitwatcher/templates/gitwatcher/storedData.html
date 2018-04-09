@@ -9,16 +9,16 @@
 
 	{% if mydict %}
 
-		{% for key in mydict %}
+		{% for key,value in mydict.items %}
 			<h1>{{key}}</h1>
 			<table border="1">
 				<tr>
 					<th>branch</th>
 					<th>실행</th>
 				</tr>
-			{% for value in {{key}} %}
+			{% for i in value %}
 				<tr>
-					<td>{{value}}</td>
+					<td>{{i}}</td>
 					<td><button>실행</button></td>
 				</tr>
 			{% endfor %}

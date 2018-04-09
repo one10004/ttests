@@ -51,7 +51,7 @@ def storedData(request):
 				branch += '_'
 				branch += temp[j]
 			context[cap_key].append(branch)
-
+	context = Context(context)
 	return render(request,'gitwatcher/storedData.html',context)
 
 def gitwatch2(request, address, branch):

@@ -37,19 +37,17 @@ def storedData(request):
 	for i in range(0,len(files)):
 		temp = files[i].split('_')
 		if temp[1] in context:
-			branch = ''
-			for j in range(3,len(files)):
+			branch = temp[3]
+			for j in range(4,len(temp)):
+				branch += '_'
 				branch += temp[j]
-				if j != len(files) - 1 :
-					branch += '_'
 			context[temp[1]].append(branch)
 		else:
 			context[temp[1]] = []
-			branch = ''
-			for j in range(3,len(files)):
+			branch = temp[3]
+			for j in range(4,len(temp)):
+				branch += '_'
 				branch += temp[j]
-				if j != len(files) - 1:
-					branch += '_'
 			context[temp[1]].append(branch)
 
 

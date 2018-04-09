@@ -68,7 +68,7 @@ def storedData(request):
 	return render(request,'gitwatcher/storedData.html',context)
 
 def result(request, address):
-	addr = 'gitwatcher/' + address
+	addr = 'gitwatcher/' + address + '.html'
 	return render(request, addr)
 
 def gitwatch2(request, address, branch):

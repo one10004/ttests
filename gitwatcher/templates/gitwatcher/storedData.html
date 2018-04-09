@@ -10,7 +10,7 @@
 	{% if mydict %}
 
 		{% for key,value in mydict.items %}
-			<h1>{{key}}</h1>
+			<p><h1>{{key}}</h1></p>
 			<table border="1">
 				<tr>
 					<th>branch</th>
@@ -18,8 +18,8 @@
 				</tr>
 			{% for i in value %}
 				<tr>
-					<td>{{i}}</td>
-					<td><button>실행</button></td>
+					<td id="">{{i}}</td>
+					<td><button onclick="click()">실행</button></td>
 				</tr>
 			{% endfor %}
 			</table>
@@ -40,5 +40,10 @@
 	{% endfor %}
 	</table>
 	-->
+	<script type="text/javascript">
+		function click(){
+
+		}
+	</script>
 </body>
 </html>

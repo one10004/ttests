@@ -37,21 +37,21 @@ def storedData(request):
 
 	for i in range(0,len(files)):
 		temp = files[i].split('_')
-		cap_key_temp = temp[1].split('-')
-		cap_key = cap_key_temp[0] + '_' + cap_key_temp[1] + '_' + cap_key_temp[2]
-		if cap_key in context['mydict']:
+		#cap_key_temp = temp[1].split('-')
+		#cap_key = cap_key_temp[0] + '_' + cap_key_temp[1] + '_' + cap_key_temp[2]
+		if temp[1] in context['mydict']:
 			branch = temp[3]
 			for j in range(4,len(temp)):
 				branch += '_'
 				branch += temp[j]
-			context['mydict'][cap_key].append(branch)
+			context['mydict'][temp[1]].append(branch)
 		else:
-			context['mydict'][cap_key] = []
+			context['mydict'][temp[1]] = []
 			branch = temp[3]
 			for j in range(4,len(temp)):
 				branch += '_'
 				branch += temp[j]
-			context['mydict'][cap_key].append(branch)
+			context['mydict'][temp[1]].append(branch)
 
 	return render(request,'gitwatcher/storedData.html',context)
 

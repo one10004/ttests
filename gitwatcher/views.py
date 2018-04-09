@@ -5,7 +5,7 @@ import zipfile
 from gitinspector import gitinspector as git
 import boto3
 import botocore
-from django.template import RequestContext, loader
+from django.template import Context, loader
 # Create your views here.
 
 def index(request):

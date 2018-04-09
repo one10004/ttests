@@ -32,8 +32,8 @@ def gitwatch1(request, address):
 def storedData(request):
 	path = '/home/ubuntu/html'
 	files = os.listdir(path)
-	context = RequestContext(request,{'params_list':files})
-	return render(request,'gitwatcher/storedData.html',files)
+	context = RequestContext(request,{'params_list':{'name':'jee'}})
+	return render(request,'gitwatcher/storedData.html')
 
 def gitwatch2(request, address, branch):
 	address_words = address.split('/')

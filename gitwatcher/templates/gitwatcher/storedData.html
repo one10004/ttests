@@ -10,7 +10,7 @@
 	{% if mydict %}
 
 		{% for key,value in mydict.items %}
-			<p><h1>{{key}}</h1></p>
+			<p id="repo"><h1>{{key}}</h1></p>
 			<table border="1">
 				<tr>
 					<th>branch</th>
@@ -18,7 +18,7 @@
 				</tr>
 			{% for i in value %}
 				<tr>
-					<td id="">{{i}}</td>
+					<p id="branch"><td>{{i}}</td></p>
 					<td><button onclick="click()">실행</button></td>
 				</tr>
 			{% endfor %}
@@ -42,7 +42,10 @@
 	-->
 	<script type="text/javascript">
 		function click(){
-
+			var url = '/kookmin-sw_';
+			url += document.getElementById("repo").value + '_branch_';
+			url += document.getElementById("input").value;
+			location.href = url;
 		}
 	</script>
 </body>

@@ -33,8 +33,7 @@ def storedData(request):
 	path = '/home/ubuntu/html'
 	files = os.listdir(path)
 	context = RequestContext(request,{'params_list':files})
-	template = loader.get_template('gitwatcher/storedData.html')
-	return HttpResponse(template.render(context))
+	return render(request,'gitwatcher/storedData.html',context)
 
 def gitwatch2(request, address, branch):
 	address_words = address.split('/')

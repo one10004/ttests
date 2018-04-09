@@ -47,8 +47,13 @@ def storedData(request):
 			context['mydict'][temp[1]] = []
 			branch = temp[3]
 			for j in range(4,len(temp)):
-				branch += '_'
-				branch += temp[j]
+				if j == len(temp)-1:
+					remove_html = temp[j].split('.')
+					branch += '_'
+					branch += remove_html[0]
+				else:
+					branch += '_'
+					branch += temp[j]
 			context['mydict'][temp[1]].append(branch)
 
 	return render(request,'gitwatcher/storedData.html',context)

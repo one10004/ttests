@@ -3,8 +3,8 @@ from django.http import HttpResponse
 import os
 import zipfile
 from gitinspector import gitinspector as git
-import boto3
-import botocore
+#import boto3
+#import botocore
 from django.template import Context, loader
 # Create your views here.
 
@@ -16,21 +16,20 @@ def clonegit(request):
 
 def gitwatch1(request, address):
 	address = 'https://github.com/' + address
-	os.chdir('/home/ubuntu')
+	os.chdir('/home/ec2-user')
 	os.system('git clone ' + address + '.git')
 	words = address.split('/')
 	length = len(words)
-	os.chdir('/home/ubuntu/' + words[length-1])
-	os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics1.html --grading')
+	os.chdir('/home/ec2-user/' + words[length-1])
+	os.system('python3 /home/ec2-user/gitinspector/gitinspector.py -F html > /home/ec2-user/ttests/gitwatcher/templates/gitwatcher/statistics1.html --grading')
 	#git.main(words[length-1])
-	os.chdir('/home/ubuntu')
+	os.chdir('/home/ec2-user')
 	os.system('rm -rf ' + words[length-1])
 
-	#html_output = 'gitwatcher/' + words[length-1] + '.html'
 	return render(request, 'gitwatcher/statistics1.html')
 
 def storedData(request):
-	path = '/home/ubuntu/html'
+	path = '/home/ec2-user/files/html'
 	files = os.listdir(path)
 	files.sort()
 	context = {}
@@ -38,7 +37,7 @@ def storedData(request):
 	os.chdir(path)
 
 	for i in range(0,len(files)):
-		os.system('cp ' + files[i] + ' /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/')
+		os.system('cp ' + files[i] + ' /home/ec2-user/ttests/gitwatcher/templates/gitwatcher/')
 		temp = files[i].split('_')
 		if temp[1] in context['mydict']:
 			if temp[3] == 'master.html':
@@ -78,6 +77,7 @@ def result(request, address):
 	addr = 'gitwatcher/' + address + '.html'
 	return render(request, addr)
 
+'''
 def gitwatch2(request, address, branch):
 	address_words = address.split('/')
 	branch_words = branch.split('/')
@@ -105,7 +105,7 @@ def gitwatch2(request, address, branch):
 	os.chdir('/home/ubuntu')
 	os.system('rm -rf git_repo.zip')
 	os.system('rm -rf git_repo')
-	#os.system('python3 /home/ubuntu/gitinspector/gitinspector.py -F html > /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/statistics2.html')
 
 	html_output = 'gitwatcher/' + address_words[1] + '.html'
 	return render(request, html_output)
+'''

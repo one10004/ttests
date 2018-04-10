@@ -34,6 +34,7 @@ def storedData(request):
 	files = os.listdir(path)
 	context = {}
 	context['mydict'] = {}
+	os.chdir(path)
 
 	for i in range(0,len(files)):
 		os.system('cp ' + files[i] + ' /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/')

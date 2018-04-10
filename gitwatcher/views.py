@@ -69,7 +69,6 @@ def storedData(request):
 					branch += '_'
 					branch += temp[j]
 			context['mydict'][temp[1]].append(branch)
-	context['mydict'] = sorted(context['mydict'].items(), key = k)
 
 	return render(request,'gitwatcher/storedData.html',context)
 

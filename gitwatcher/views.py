@@ -48,7 +48,7 @@ def storedData(request):
 				if j == len(temp)-1:
 					remove_html = temp[j].split('.')
 					branch += '_'
-					branch += temp[j]
+					branch += remove_html[0]
 				else:
 					branch += '_'
 					branch += temp[j]

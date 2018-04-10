@@ -38,7 +38,7 @@ def storedData(request):
 		os.system('cp ' + files[i] + ' /home/ec2-user/ttests/gitwatcher/templates/gitwatcher/')
 		temp = files[i].split('_')
 		if temp[1] in context['mydict']:
-			if temp[3] == 'master.html':
+			if temp[3].find('.') != -1:
 				remove_html = temp[3].split('.')
 				branch = remove_html[0]
 			else:
@@ -53,7 +53,7 @@ def storedData(request):
 					branch += temp[j]
 			context['mydict'][temp[1]].append(branch)
 		else:
-			if temp[3] == 'master.html':
+			if temp[3].find('.') != -1:
 				remove_html = temp[3].split('.')
 				branch = remove_html[0]
 			else:

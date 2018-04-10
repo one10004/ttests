@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import os
-import zipfile
-from gitinspector import gitinspector as git
 #import boto3
 #import botocore
 from django.template import Context, loader

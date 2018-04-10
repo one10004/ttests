@@ -30,7 +30,7 @@ def gitwatch1(request, address):
 	return render(request, 'gitwatcher/statistics1.html')
 
 def storedData(request):
-	path = '/home/ubuntu/html'
+	path = '/home/ubuntu/ttests/gitwatcher/templates/gitwatcher'
 	files = os.listdir(path)
 	context = {}
 	context['mydict'] = {}

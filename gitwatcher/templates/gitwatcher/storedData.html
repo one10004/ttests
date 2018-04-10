@@ -19,7 +19,7 @@
 			{% for i in value %}
 				<tr>
 					<p id="{{i}}"><td>{{i}}</td></p>
-					<td><button onclick="click('{{key}}' , '{{i}}')">실행</button></td>
+					<td><button onclick="result('{{key}}' , '{{i}}')">실행</button></td>
 				</tr>
 			{% endfor %}
 			</table>
@@ -41,11 +41,10 @@
 	</table>
 	-->
 	<script type="text/javascript">
-		function click(repo, branch){
+		function result(repo, branch){
 			var url = 'storedData/kookmin-sw_';
 			url += repo + '_branch_';
 			url += branch;
-			console.log(url);
 			location.href = url;
 		}
 	</script>

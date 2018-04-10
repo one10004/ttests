@@ -36,7 +36,7 @@ def storedData(request):
 	context['mydict'] = {}
 
 	for i in range(0,len(files)):
-		os.system('cp ' + files[i] + ' /home/ubuntu/ttests/gitwatcher/templates/gitwatcher')
+		os.system('cp ' + files[i] + ' /home/ubuntu/ttests/gitwatcher/templates/gitwatcher/')
 		temp = files[i].split('_')
 		if temp[1] in context['mydict']:
 			if temp[3] == 'master.html':

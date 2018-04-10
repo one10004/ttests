@@ -59,7 +59,6 @@ def storedData(request):
 			else:
 				branch = temp[3]
 			context['mydict'][temp[1]] = []
-			branch = temp[3]
 			for j in range(4,len(temp)):
 				if j == len(temp)-1:
 					remove_html = temp[j].split('.')

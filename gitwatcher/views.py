@@ -29,7 +29,8 @@ def gitwatch1(request, address):
 def storedData(request):
 	path = '/home/ec2-user/files/html'
 	files = os.listdir(path)
-	files.sort()
+	k = lambda x: int(x[21] if x[22] is "_" else int(x[21:23]))
+	files.sort(key=k)
 	context = {}
 	context['mydict'] = {}
 	os.chdir(path)

@@ -29,23 +29,23 @@ def gitwatch1(request, address):
 def storedData(request):
 	path = '/home/ec2-user/files/html'
 	files = os.listdir(path)
-	k = lambda x: int(x[21] if x[22] is "_" else int(x[21:23]))
-	files.sort(key=k)
+	k = lambda x: int(x[-1] if x[-2] is "-" else int(x[-2:]))
+	#files.sort(key=k)
 	context = {}
 	context['mydict'] = {}
 	os.chdir(path)
 
 	for i in range(0,len(files)):
-		os.system('cp ' + files[i] + ' /home/ec2-user/ttests/gitwatcher/templates/gitwatcher/')
+		os.system('cp ' + files[i] + ' /home/ec2-user/ttests/gitwatcher/templates/gitwatcher/')  #django의 template으로 복사하기 
 		temp = files[i].split('_')
-		if temp[1] in context['mydict']:
-			if temp[3].find('.') != -1:
+		if temp[1] in context['mydict']:  
+			if temp[3].find('.') != -1: #html이 붙어 있는 것을 떼어주기 위한 작업 
 				remove_html = temp[3].split('.')
 				branch = remove_html[0]
 			else:
 				branch = temp[3]
 			for j in range(4,len(temp)):
-				if j == len(temp)-1:
+				if j == len(temp)-1:  # 마지막 branch명에 html이 붙어 있는 것을 떼어주기 위한 방법 
 					remove_html = temp[j].split('.')
 					branch += '_'
 					branch += remove_html[0]
@@ -69,6 +69,7 @@ def storedData(request):
 					branch += '_'
 					branch += temp[j]
 			context['mydict'][temp[1]].append(branch)
+	context.sort(context['mydict'].items(), key = k)
 
 	return render(request,'gitwatcher/storedData.html',context)
 

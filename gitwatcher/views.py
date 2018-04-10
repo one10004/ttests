@@ -53,6 +53,11 @@ def storedData(request):
 					branch += temp[j]
 			context['mydict'][temp[1]].append(branch)
 		else:
+			if temp[3] == 'master.html':
+				remove_html = temp[3].split('.')
+				branch = remove_html[0]
+			else:
+				branch = temp[3]
 			context['mydict'][temp[1]] = []
 			branch = temp[3]
 			for j in range(4,len(temp)):

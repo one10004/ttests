@@ -1,0 +1,510 @@
+  File "manage.py", line 14
+    ) from exc
+         ^
+SyntaxError: invalid syntax
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 03:16:31] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:16:32] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:16:34] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:16:48] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:16:49] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:17:14] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:17:18] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:17:20] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:17:25] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:17:29] "GET /storedData/kookmin-sw_2018-cap1-4_branch_Function_receptionPage_patientInfo HTTP/1.1" 200 195603
+[10/Apr/2018 03:17:52] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:17:54] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:17:57] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:18:02] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 03:18:06] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 03:18:10] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 03:18:13] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 03:18:18] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 03:18:23] "GET /storedData/kookmin-sw_2018-cap1-4_branch_Function_receptionPage_patientInfo HTTP/1.1" 200 195603
+[10/Apr/2018 03:18:27] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 03:18:31] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 03:18:34] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 03:18:40] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:20:53] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:20:54] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:20:57] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:20:58] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:21:01] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:21:04] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 03:21:09] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:21:11] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:21:18] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 03:21:34] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:21:37] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:21:40] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 03:21:41] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:21:43] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:21:50] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:21:53] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:21:59] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 03:22:02] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:22:02] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 03:22:13] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:22:16] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:22:29] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 03:23:03] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:23:05] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:23:10] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:23:12] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:23:16] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:23:22] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 03:29:19] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 03:29:43] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 03:29:49] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 03:29:54] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 03:29:57] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 03:30:05] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 03:30:11] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 03:30:27] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:30:39] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 03:30:53] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:32:33] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:33:55] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:34:04] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:34:45] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:37:46] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:37:51] "GET /storedData/kookmin-sw_2018-cap1-4_branch_Function_receptionPage_patientInfo HTTP/1.1" 200 195603
+[10/Apr/2018 03:39:46] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:48:59] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:49:01] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 03:49:04] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 03:50:24] "GET / HTTP/1.1" 200 512
+Performing system checks...
+
+April 10, 2018 - 03:16:26
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 03:51:19] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:51:20] "GET /storedData HTTP/1.1" 500 66493
+Performing system checks...
+
+April 10, 2018 - 03:51:18
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 03:51:56] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:51:58] "GET /storedData HTTP/1.1" 200 2355
+Performing system checks...
+
+April 10, 2018 - 03:51:52
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 03:52:56] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:52:57] "GET /storedData HTTP/1.1" 500 70245
+Performing system checks...
+
+April 10, 2018 - 03:52:55
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 03:58:32] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 03:58:33] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:00:15] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:00:16] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 04:00:18] "GET /storedData HTTP/1.1" 200 2355
+Performing system checks...
+
+April 10, 2018 - 03:58:30
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 04:14:22] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:14:23] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:17:25] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:17:26] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:21:34] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:21:37] "GET /storedData HTTP/1.1" 200 2355
+Performing system checks...
+
+April 10, 2018 - 04:14:21
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 04:25:15] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:25:17] "GET /storedData HTTP/1.1" 500 68430
+[10/Apr/2018 04:26:00] "GET / HTTP/1.1" 200 512
+Performing system checks...
+
+April 10, 2018 - 04:25:14
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 04:26:29] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:26:30] "GET /storedData HTTP/1.1" 500 72109
+Performing system checks...
+
+April 10, 2018 - 04:26:21
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[10/Apr/2018 04:26:52] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:26:53] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:27:02] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 04:27:03] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 04:27:05] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:27:10] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 04:28:14] "GET /storedData HTTP/1.1" 200 2355
+[10/Apr/2018 04:29:26] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 04:31:00] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 04:44:54] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 04:44:57] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 04:46:34] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 04:46:37] "GET /storedData/kookmin-sw_2018-cap1-4_branch_Function_receptionPage_patientInfo HTTP/1.1" 200 195603
+[10/Apr/2018 04:46:58] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 04:47:07] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 04:47:11] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 04:47:15] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 04:49:26] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 04:49:33] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 04:49:38] "GET /storedData/kookmin-sw_2018-cap1-4_branch_Function_receptionPage_patientInfo HTTP/1.1" 200 195603
+[10/Apr/2018 04:49:43] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 04:49:52] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 04:50:04] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 04:50:13] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 04:50:17] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 04:50:49] "GET /storedData/kookmin-sw_2018-cap1-4_branch_setting_drools HTTP/1.1" 200 195947
+[10/Apr/2018 04:50:59] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 04:57:39] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 04:57:39] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 04:57:43] "GET / HTTP/1.0" 200 512
+[10/Apr/2018 04:57:44] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 04:57:52] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 04:57:58] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 04:59:01] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:01:51] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:01:54] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 05:01:55] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 05:01:57] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:15:23] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 05:15:24] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 05:15:31] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:15:51] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 05:15:54] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:16:08] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:16:28] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 05:16:36] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194667
+[10/Apr/2018 05:16:40] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 05:16:45] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 05:16:49] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 05:16:52] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195547
+[10/Apr/2018 05:16:57] "GET /storedData/kookmin-sw_2018-cap1-4_branch_setting_drools HTTP/1.1" 200 195947
+[10/Apr/2018 05:17:01] "GET /storedData/kookmin-sw_2018-cap1-4_branch_UI_hospitalSurvey HTTP/1.1" 200 194069
+[10/Apr/2018 05:17:05] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 05:32:27] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 05:40:44] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 05:40:45] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 05:40:47] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 06:05:48] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 06:38:20] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 07:00:32] "GET /w00tw00t.at.ISC.SANS.Win32:) HTTP/1.1" 404 2874
+[10/Apr/2018 07:22:12] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 07:22:32] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 07:22:34] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 07:23:21] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 07:23:25] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 07:23:30] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 08:34:37] "GET / HTTP/1.0" 200 512
+[10/Apr/2018 08:47:53] "GET /storedData HTTP/1.1" 200 2523
+[10/Apr/2018 10:05:08] "GET /storedData HTTP/1.1" 200 2985
+[10/Apr/2018 10:05:14] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 10:05:23] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 10:05:27] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 10:05:35] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195931
+[10/Apr/2018 10:07:02] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 10:10:25] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 10:55:11] "GET /storedData HTTP/1.1" 200 2985
+[10/Apr/2018 11:15:04] "GET /storedData HTTP/1.1" 200 3135
+[10/Apr/2018 11:15:04] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 11:15:10] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 11:15:13] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 11:15:23] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194709
+[10/Apr/2018 11:15:32] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 11:15:38] "GET /storedData/kookmin-sw_2018-cap1-4_branch_dPremodel HTTP/1.1" 200 194053
+[10/Apr/2018 11:15:45] "GET /storedData/kookmin-sw_2018-cap1-4_branch_setting_drools HTTP/1.1" 200 195947
+[10/Apr/2018 11:15:52] "GET /storedData/kookmin-sw_2018-cap1-6_branch_master HTTP/1.1" 200 214478
+[10/Apr/2018 11:21:15] "GET /storedData HTTP/1.1" 200 3135
+[10/Apr/2018 13:03:59] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 13:04:18] "GET /favicon.ico HTTP/1.1" 404 2830
+[10/Apr/2018 13:07:28] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 13:07:30] "GET /storedData HTTP/1.1" 200 3135
+[10/Apr/2018 13:07:39] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 13:07:45] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 13:07:52] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194709
+[10/Apr/2018 13:07:57] "GET /manager/html HTTP/1.1" 404 2797
+[10/Apr/2018 13:18:30] "GET /storedData HTTP/1.1" 200 3135
+[10/Apr/2018 13:18:33] "GET /storedData HTTP/1.1" 200 3135
+[10/Apr/2018 13:18:35] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 13:18:38] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 13:24:09] "GET /storedData HTTP/1.1" 200 3288
+[10/Apr/2018 13:24:14] "GET /storedData/kookmin-sw_2018-cap1-6_branch_frontend2 HTTP/1.1" 200 193317
+[10/Apr/2018 13:24:52] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195931
+[10/Apr/2018 13:25:01] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gi_lambda HTTP/1.1" 200 213100
+[10/Apr/2018 13:25:08] "GET /storedData/kookmin-sw_2018-cap1-6_branch_frontend2 HTTP/1.1" 200 193317
+[10/Apr/2018 13:25:15] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[10/Apr/2018 13:25:23] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 13:28:19] "GET /storedData HTTP/1.1" 200 3288
+[10/Apr/2018 13:28:31] "GET /storedData/kookmin-sw_2018-cap1-4_branch_setting_drools HTTP/1.1" 200 195947
+[10/Apr/2018 13:28:39] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 13:42:49] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 13:43:07] "GET / HTTP/1.1" 200 512
+[10/Apr/2018 14:08:35] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 14:23:06] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 14:23:17] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 14:23:29] "GET /storedData/kookmin-sw_2018-cap1-14_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 14:23:33] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 14:23:37] "GET /storedData/kookmin-sw_2018-cap1-8_branch_master HTTP/1.1" 200 191534
+[10/Apr/2018 14:23:42] "GET /storedData/kookmin-sw_2018-cap1-16_branch_web HTTP/1.1" 200 194709
+[10/Apr/2018 14:23:50] "GET /storedData/kookmin-sw_2018-cap1-12_branch_master HTTP/1.1" 200 186869
+[10/Apr/2018 14:23:54] "GET /storedData/kookmin-sw_2018-cap1-4_branch_master HTTP/1.1" 200 195931
+[10/Apr/2018 14:43:20] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 14:43:27] "GET /clonegit HTTP/1.1" 200 492
+[10/Apr/2018 14:43:30] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 14:51:31] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 15:12:06] "GET /storedData HTTP/1.1" 200 3585
+[10/Apr/2018 15:26:16] "GET /storedData HTTP/1.1" 200 3585
+Traceback (most recent call last):
+  File "/usr/lib64/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.5/site-packages/Django-1.8.19-py3.5.egg/django/core/servers/basehttp.py", line 102, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib64/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/site-packages/Django-1.8.19-py3.5.egg/django/core/servers/basehttp.py", line 167, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib64/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib64/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python3.5/site-packages/Django-1.8.19-py3.5.egg/django/core/servers/basehttp.py", line 102, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib64/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/site-packages/Django-1.8.19-py3.5.egg/django/core/servers/basehttp.py", line 167, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib64/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[10/Apr/2018 16:19:54] "GET /script HTTP/1.1" 404 2779
+[10/Apr/2018 20:43:49] "GET /manager/html HTTP/1.1" 404 2797
+[10/Apr/2018 23:19:33] "GET /manager/html HTTP/1.1" 404 2797
+[10/Apr/2018 23:50:18] "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 2836
+Performing system checks...
+
+April 10, 2018 - 04:26:49
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('221.151.146.118', 2618)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('221.151.146.118', 2619)
+----------------------------------------
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+Performing system checks...
+
+April 11, 2018 - 00:42:41
+Django version 1.8.19, using settings 'webapp.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Cloning into 'DiningCode'...
+Cloning into '2018-cap1-6'...
+System check identified some issues:
+
+WARNINGS:
+?: (1_7.W001) MIDDLEWARE_CLASSES is not set.
+	HINT: Django 1.7 changed the global defaults for the MIDDLEWARE_CLASSES. django.contrib.sessions.middleware.SessionMiddleware, django.contrib.auth.middleware.AuthenticationMiddleware, and django.contrib.messages.middleware.MessageMiddleware were removed from the defaults. If your project needs these middleware then you should configure this setting.
+
+System check identified 1 issue (0 silenced).
+[11/Apr/2018 00:48:04] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 00:48:05] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 00:48:05] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 00:48:05] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 00:48:05] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 00:48:05] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 117150
+[11/Apr/2018 00:48:17] "GET /clonegit HTTP/1.1" 200 1431
+[11/Apr/2018 00:48:18] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 00:48:23] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 00:48:23] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 00:48:23] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 00:48:23] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 00:48:23] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 00:48:26] "GET /storedData HTTP/1.1" 500 150302
+[11/Apr/2018 00:59:00] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 00:59:01] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 00:59:01] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 00:59:01] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 00:59:01] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 00:59:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 00:59:04] "GET /storedData HTTP/1.1" 500 150302
+[11/Apr/2018 00:59:31] "GET /clonegit HTTP/1.1" 200 1431
+[11/Apr/2018 00:59:32] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 00:59:48] "GET /clonegit HTTP/1.1" 200 1431
+[11/Apr/2018 00:59:49] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 00:59:55] "GET /storedData HTTP/1.1" 500 150302
+[11/Apr/2018 01:24:59] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 01:25:00] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 01:25:00] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:25:00] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:25:00] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:25:00] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 117150
+[11/Apr/2018 01:25:01] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:25:01] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:25:13] "GET /clonegit HTTP/1.1" 200 1634
+[11/Apr/2018 01:25:14] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 01:25:16] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:25:16] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:25:16] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:25:20] "GET /storedData HTTP/1.1" 500 150143
+[11/Apr/2018 01:26:53] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 01:26:53] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 01:26:53] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:26:54] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:26:54] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:26:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 117150
+[11/Apr/2018 01:26:59] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:27:03] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:27:11] "GET /clonegit HTTP/1.1" 200 1634
+[11/Apr/2018 01:27:11] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 01:27:42] "GET /favicon.ico HTTP/1.1" 404 2830
+[11/Apr/2018 01:28:27] "GET /clonegit/hohyunjun/DiningCode/result HTTP/1.1" 200 200152
+[11/Apr/2018 01:28:27] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:28:29] "GET /storedData HTTP/1.1" 200 3987
+[11/Apr/2018 01:28:39] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[11/Apr/2018 01:30:30] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:30:32] "GET /clonegit HTTP/1.1" 200 1634
+[11/Apr/2018 01:30:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:30:32] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 01:31:17] "GET /clonegit/kookmin-sw/2018-cap1-6/result HTTP/1.1" 200 214428
+[11/Apr/2018 01:31:40] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 01:31:43] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:31:45] "GET /storedData HTTP/1.1" 200 3987
+[11/Apr/2018 01:31:46] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:42:54] "GET /clonegit HTTP/1.1" 200 1634
+[11/Apr/2018 01:42:54] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:42:54] "GET /signin.css HTTP/1.1" 404 2827
+[11/Apr/2018 01:42:56] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:42:58] "GET /storedData HTTP/1.1" 200 5458
+[11/Apr/2018 01:44:50] "GET /storedData HTTP/1.1" 200 6297
+[11/Apr/2018 01:49:24] "GET /storedData HTTP/1.1" 200 5200
+[11/Apr/2018 01:49:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:51:58] "GET /storedData HTTP/1.1" 200 6297
+[11/Apr/2018 01:52:25] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 01:52:26] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 01:52:26] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:52:26] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 01:52:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:52:26] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:52:26] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 01:52:27] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 01:52:29] "GET /storedData HTTP/1.1" 200 6297
+[11/Apr/2018 01:52:39] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[11/Apr/2018 01:52:45] "GET /storedData/kookmin-sw_2018-cap1-6_branch_frontend2 HTTP/1.1" 200 193317
+[11/Apr/2018 01:53:07] "GET /storedData HTTP/1.1" 200 6225
+[11/Apr/2018 01:53:09] "GET /storedData HTTP/1.1" 200 6225
+[11/Apr/2018 01:54:32] "GET /storedData HTTP/1.1" 200 6231
+[11/Apr/2018 01:55:40] "GET /storedData HTTP/1.1" 200 6345
+[11/Apr/2018 01:55:42] "GET /storedData HTTP/1.1" 200 6345
+[11/Apr/2018 01:56:32] "GET /storedData HTTP/1.1" 200 6429
+[11/Apr/2018 01:56:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 01:57:52] "GET /storedData/kookmin-sw_2018-cap1-6_branch_gitInspector_Server HTTP/1.1" 200 214982
+[11/Apr/2018 02:00:31] "GET /storedData HTTP/1.1" 200 6178
+[11/Apr/2018 02:02:03] "GET /storedData HTTP/1.1" 200 5741
+[11/Apr/2018 02:02:19] "GET /storedData HTTP/1.1" 200 6178
+[11/Apr/2018 02:03:50] "GET /storedData HTTP/1.1" 200 6178
+[11/Apr/2018 02:03:50] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 02:06:00] "GET /storedData HTTP/1.1" 500 182272
+[11/Apr/2018 02:07:14] "GET /storedData HTTP/1.1" 200 6194
+[11/Apr/2018 02:07:26] "GET /storedData HTTP/1.1" 200 6178
+[11/Apr/2018 02:07:39] "GET /storedData HTTP/1.1" 500 186766
+[11/Apr/2018 02:07:45] "GET /storedData HTTP/1.1" 200 6194
+[11/Apr/2018 02:08:25] "GET / HTTP/1.1" 200 5095
+[11/Apr/2018 02:08:25] "GET /static/css/bootstrap.min.css HTTP/1.1" 304 0
+[11/Apr/2018 02:08:25] "GET /assets/js/ie-emulation-modes-warning.js HTTP/1.1" 404 2914
+[11/Apr/2018 02:08:25] "GET /jumbotron.css HTTP/1.1" 404 2836
+[11/Apr/2018 02:08:25] "GET /dist/js/bootstrap.min.js HTTP/1.1" 404 2869
+[11/Apr/2018 02:08:25] "GET /assets/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 2920
+[11/Apr/2018 02:08:27] "GET /storedData HTTP/1.1" 200 6194
+[11/Apr/2018 02:08:41] "GET /clonegit HTTP/1.1" 200 1634

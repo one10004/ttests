@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,24 +13,32 @@
 	<!-- Bootstrap core CSS -->
 	<link href='{% static "css/bootstrap.min.css" %}' rel="stylesheet">
 </head>
-<body>
+<body style="background-color:#F5F5DC;">
 
 	{% if mydict %}
 
 		{% for key,value in mydict.items %}
-			<p id="{{key}}"><h1>{{key}}</h1></p>
-			<table border="1">
+			<p id="{{key}}"><h2 class="text-center">{{key}}</h2></p>
+            <div class="text-center container" style="width:50%;">
+			<table class="table table-hover">
+                <thead class="thead-dark">
 				<tr>
-					<th>branch</th>
-					<th>실행</th>
+                    <th scope="col">#</th>
+					<th scope="col" class="text-center">branch</th>
+					<th scope="col" class="text-center">실행</th>
 				</tr>
+                </thead>
+                <tbody>
 			{% for i in value %}
-				<tr>
+                <tr>
+                    <th scope="row">{{forloop.counter0}}</th>
 					<p id="{{i}}"><td>{{i}}</td></p>
-					<td><button onclick="result('{{key}}' , '{{i}}')">실행</button></td>
+					<td><button class="btn btn-primary" onclick="result('{{key}}' , '{{i}}')">실행</button></td>
 				</tr>
 			{% endfor %}
+                </tbody>
 			</table>
+            </div>
 		{% endfor %}
 
 	{% endif %}
